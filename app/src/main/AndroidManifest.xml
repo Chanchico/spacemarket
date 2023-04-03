@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,16 +14,16 @@
         android:theme="@style/Theme.SpaceMarket"
         tools:targetApi="31">
         <activity
-            android:name=".RayonWsActivity"
+            android:name=".ProductInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".RayonsActivity"
+            android:name=".productInfo"
             android:exported="false" />
         <activity
-            android:name=".ProductListActivity"
+            android:name=".ProductWSActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductListAtivity"
+            android:name=".RayonWSActivity"
             android:exported="false" />
         <activity
             android:name=".InfoActivity"
