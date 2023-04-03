@@ -15,7 +15,7 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imagePP"
         android:layout_margin="30dp"
         android:layout_width="256dp"
         android:layout_height="251dp"

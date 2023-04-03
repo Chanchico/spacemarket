@@ -1,5 +1,6 @@
 package com.epsi.spacemarket.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.epsi.spacemarket.ProductInfoActivity
 import com.epsi.spacemarket.R
 import com.epsi.spacemarket.model.Product
 import com.squareup.picasso.Picasso
@@ -28,7 +30,14 @@ class ProductAdapter (val products: ArrayList<Product>) :
         holder.productName.text = product.name
         holder.productDescription.text = product.description
         Picasso.get().load(product.image).into(holder.productImage)
-        //TODO: add click listener
+
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val intent = Intent(holder.productName.context, ProductInfoActivity::class.java)
+            intent.putExtra("productName", product.name)
+            intent.putExtra("productDescription", product.description)
+            intent.putExtra("productImage", product.image)
+            holder.productName.context.startActivity(intent)
+        })
     }
 
     override fun getItemCount(): Int {
