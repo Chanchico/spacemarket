@@ -26,7 +26,7 @@ class RayonAdapter(val rayons: ArrayList<Rayon>) :
         override fun onBindViewHolder(holder: RayonAdapter.ViewHolder, position: Int) {
             val rayon = rayons.get(position)
             holder.rayonName.text = rayon.name
-            holder.rayonProductsUrl.text = rayon.products_url
+//            holder.rayonProductsUrl.text = rayon.products_url
 
             holder.layoutContent.setOnClickListener(View.OnClickListener {
                val intent = Intent(holder.rayonName.context, ProductWSActivity::class.java)
@@ -43,7 +43,7 @@ class RayonAdapter(val rayons: ArrayList<Rayon>) :
 
         class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             val rayonName = view.findViewById<TextView>(R.id.rayonName)
-            val rayonProductsUrl = view.findViewById<TextView>(R.id.rayonProductsUrl)
+//            val rayonProductsUrl = view.findViewById<TextView>(R.id.rayonProductsUrl)
             val layoutContent = view.findViewById<LinearLayout>(R.id.layoutContent)
         }
     }
