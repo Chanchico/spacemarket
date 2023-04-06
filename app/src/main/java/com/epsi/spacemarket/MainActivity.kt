@@ -17,5 +17,11 @@ import android.widget.Button
             val intent =  Intent(application, InfoActivity::class.java)
             startActivity(intent)
         }
+
+        val buttonProduct = findViewById<Button>(R.id.buttonProduct)
+        buttonProduct.setOnClickListener {
+            val intent =  Intent(application, RayonWSActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

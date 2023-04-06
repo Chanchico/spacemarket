@@ -11,20 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/buttonInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Info"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="209dp" />
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"/>
 
-    <Button
-        android:id="@+id/buttonProduct"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Product"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:text="Description" />
 
 </LinearLayout>
