@@ -21,6 +21,7 @@
         android:id="@+id/textDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description" />
+        android:text="Description"
+        style="@style/style_text"/>
 
 </LinearLayout>

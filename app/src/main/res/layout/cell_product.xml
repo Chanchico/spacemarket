@@ -3,30 +3,36 @@
     android:id="@+id/layoutContent"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:orientation="horizontal">
-
+    android:orientation="horizontal"
+    android:background="@drawable/border"
+    android:layout_margin="2dp">
     <ImageView
         android:id="@+id/imageProduct"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:contentDescription="TODO"/>
+<!--        android:padding="2dp"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="120dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name" />
+            android:text="Name"
+            android:textStyle="bold"
+            style="@style/style_text"/>
 
         <TextView
             android:id="@+id/textDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description" />
+            android:text="Description"
+            style="@style/style_text"/>
 
 
     </LinearLayout>
